@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,500&display=swap');
+body{
+	
+}
+.f1{
+	float: left;
+	padding-left: 5px;
+	width: 50%;
+}
+.f2{
+	float: right;
+	padding-left: 5px;
+	width: 50%;
+}
+
+.FormTags{
+	background-color:rgb(255, 255, 255) ;
+	font-family: 'Open Sans',sans-serif;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	margin: 0;	
+}
+.SignF{
+	float: right;
+	padding: 10px 10px;
+	margin-bottom: 40px;
+	color: black;
+}
+.Pass{
+	float: left;
+	padding: 10px 10px;
+}
+.img{
+	width: 500px;
+	height: 500px;
+}
+.Container{
+	background-color: rgb(146, 146, 146) ;
+	overflow: hidden;
+	border-radius: 10px;
+	box-shadow:25px 25px 15px rgba(0,0,0,0.7) ;
+	width: 400px;
+	max-width: 100%;
+}
+
+.header{
+	background-color: gray;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.header h2{
+	margin:0;
+}
+
+
+.form{
+	padding: 30px 40px;
+}
+
+.form-control{
+   
+   margin-bottom: 10px;
+   padding-bottom: 10px;
+   position: relative;
+} 
+.form-control label{
+	display: inline-block;
+	margin-bottom: 5px;
+}
+.form-control input{
+	border:2px solid #f0f0f0;
+	border-radius: 3px;
+	display: block;
+	font-family: inherit;
+	font-size: 14px;
+	padding: 10px;
+	width: 93%;
+}
+.form-control.success input{
+	border: 2px solid lawngreen;
+}
+.form-control.error input{
+	border: 2px solid red;
+}
+
+
+
+.form-control i{
+	visibility: hidden;
+	position:absolute;
+	top:40px;
+	right: 10px;
+}
+
+.form-control.success i.fa-check{
+	visibility: visible;
+}
+
+.form-control.error i.fa-exclamation{
+	visibility: visible;
+}
+
+
+
+.form-control small{
+	visibility: hidden;
+	position: absolute;
+	bottom:-6px;
+	left:0;
+		
+}
+.form-control.error small{
+	visibility: visible;
+	color: red;
+	
+}
+.form button{
+	background-color: gray;
+	border:2px solid gray;
+	border-radius: 7px;
+	color: rgb(0, 0, 0);
+	display: block;
+	font-size: 16px;
+	padding: 10px;
+	width:100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

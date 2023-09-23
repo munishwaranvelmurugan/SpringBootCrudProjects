@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th ="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8" >
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+ <title>Register</title>
+
+  <link rel="stylesheet" href="" th:href="@{\Css\FrontCss.css}"/>
+   <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+   <link rel="stylesheet" th:href="@{/Css/RegisterCss.css}"/>
+</head>
+<body>
+	
+  <div class="container">
+    <div class="RegisterBody">
+	
+		<section class="containers forms">
+      
+            <!-- Register Form -->
+                  <div class="form login">
+                <div class="form-content">
+                    <header>SignUp</header>
+ <form action="/RegisterDetails"  method="post" >
+
+<div id="bind">	
+<div id="in1" class="field input-field">
+<input name="name" type="text" placeholder="Name" class="input">
+</div>
+<div  class="field input-field">
+<input name="email" type="text" placeholder="Email" class="input">
+</div>
+</div>
+	   
+	   <div id="bind">	
+<div id="in1" class="field input-field">
+<input  name="gender" type="text" placeholder="Gender" class="input">
+</div>
+<div id="in2" class="field input-field">
+<input  name="department" type="text" placeholder="Department" class="input">
+</div>
+</div>
+					   
+<div id="bind">	
+	<div id="in1" class="field input-field">
+<input  name="phoneNo" type="number" placeholder="Phone No" class="input">
+</div>
+
+<div id="in2" class="field input-field">
+<input  name="doorNo" type="text" placeholder="Door No" class="input">
+</div>
+</div>
+						   
+ <div id="bind">	
+  <div id="in1" class="field input-field">
+   <input  name="country" type="text" placeholder="country" class="input">
+  </div>
+  <div id="in2" class="field input-field">
+   <input  name="state" type="text" placeholder="State" class="input">
+  </div>
+ </div>
+ 
+ <div id="bind">	
+  <div id="in1" class="field input-field">
+   <input  name="distric" type="text" placeholder="Distric" class="input">
+  </div>
+  <div id="in2" class="field input-field">
+   <input  name="pinCode" type="number" placeholder="Pin Code" class="input">
+  </div>
+ </div>
+ 
+ <div id="bind">	
+  <div id="in1" class="field input-field">
+   <input  name="date" type="date" placeholder="Date" class="input">
+  </div>
+  
+ </div>
+					       
+					       
+	<div id="bind">	
+	 <div id="in1" class="field input-field">
+	  <input  name="password1" type="password" placeholder="Create password" class="password">
+	 </div>
+	 <div id="in2" class="field input-field">
+	  <input  name="password2" type="password" placeholder="Confirm password" class="password">
+	  <i class='bx bx-hide eye-icon'></i>
+	 </div>
+	</div>
+                        
+                         
+                        
+                        
+
+                        
+
+
+
+
+
+<div class="form-link">
+                            <a href="#" class="forgot-pass">Forgot password?</a>
+                        </div>
+                        
+                        <div class="field button-field">
+                            <button>Register</button>
+                        </div>
+        </form>
+                    <div class="form-link">
+                        <span>Don't have an account? <a href="#" class="link signup-link">SignIn</a></span>
+                    </div>
+                </div>
+                <div class="line"></div>
+              
+            </div>
+        </section>
+		
+	</div>
+    
+    
+  </div>
+<script th:src="@{\JS\RegisterJs.js}"> </script>
+</body>
+</html>

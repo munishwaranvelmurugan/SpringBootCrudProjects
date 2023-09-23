@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th ="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8" >
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+ <title>Home</title>
+
+  <link rel="stylesheet" href="" th:href="@{\Css\FrontCss.css}">
+</head>
+<body>
+  <div class="container">
+    <nav>
+      <div class="logo">
+		  <img class="Flogo" th:src="@{/img/Logo.jpg}">
+      </div>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Admin</a></li>
+        <li><a href="#">Teacher</a></li>
+        <li><a href="#">Calander</a></li>
+      </ul>
+      <div class="buttons">
+        <a th:href="@{/slogin}" th:target="_new" class="login"  >Log in</a>
+        <a th:href="@{/sRegister}" th:target="_new" class="btn">Register</a>
+      </div>
+    </nav>
+    <div class="content">
+      <h2>Hello,<br>Welcome</h2>
+      <p>I'm A Web Developer & Designer. I Will Make Your Project Beautiful And Attractive,<br>You Can Find Me On GitHub.<br>
+      This is the project Form Attandance Management System.</p>
+    </div>
+    <div class="link">
+      <a href="#" class="hire">Hire Me</a>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th ="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8" >
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <link rel="stylesheet" th:href="@{\Css\UserValidationJs.css}"/>
+ <title>Login</title>
+</head>
+<body>
+	
+	<!--<div class="img">
+		 <img th:src="@{\img\kp.jpg}"/>
+	 </div>	-->
+ <div class="Container">
+	 
+	 <div class="header"><h2>Register</h2></div>
+	 <form class="form" id="form">
+		 <div class="form-control" >
+		    <label for="">Username</label>
+		    <input type="text" placeholder="munishwaran" id="Username">
+		    <i class="fa-solid fa-check" style="color: #13fb64;"></i>
+			<i class="fa-solid fa-exclamation" style="color: #db1414;"></i>
+		    <small>Error message</small>
+	     </div>
+	     
+	     <div class="form-control" >
+		    <label for="">Email</label>
+		    <input type="text" placeholder="abc@gmail.com" id="Email">
+		    <i class="fa-solid fa-check" style="color: #13fb64;"></i>
+			<i class="fa-solid fa-exclamation" style="color: #db1414;"></i>
+		    <small>Error message</small>
+	     </div>
+	     
+	     <div class="form-control" >
+		    <label for="">Password</label>
+		    <input type="password" placeholder="Password" id="Password1">
+		    <i class="fa-solid fa-check" style="color: #13fb64;"></i>
+			<i class="fa-solid fa-exclamation" style="color: #db1414;"></i>
+		    <small>Error message</small>
+	     </div>
+	     
+	     <div class="form-control" >
+		    <label for="">Password</label>
+		    <input type="password" placeholder="Password" id="Password2">
+		    <i class="fa-solid fa-check" style="color: #13fb64;"></i>
+			<i class="fa-solid fa-exclamation" style="color: #db1414;"></i>
+		    <small>Error message</small>
+	     </div>
+	     
+	     <button>Submit</button>
+	     
+	 </form>
+	 
+	 
+ </div>
+ 
+ 
+ 
+<script th:src="@{\JS\UserValidationJs.js}"></script>
+</body>
+</html>
